@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LTX 2.3 API Guide - Access &amp; Integration Paths</title>
+  <meta name="description" content="Explore LTX 2.3 API access, common integration paths, and when non-technical users should skip the API route and start online instead for faster testing.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ltx23.github.io/ltx-2-3-api/">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="LTX 2.3 API Guide - Access &amp; Integration Paths">
+  <meta property="og:description" content="Understand API access, common developer use cases, and why many users still begin with a lighter online workflow.">
+  <meta property="og:url" content="https://ltx23.github.io/ltx-2-3-api/">
+  <meta property="og:site_name" content="LTX 2.3 Guide">
+  <meta property="og:image" content="https://ltx23.github.io/assets/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LTX 2.3 API Guide - Access &amp; Integration Paths">
+  <meta name="twitter:description" content="See who needs API access, what common integration goals look like, and when an online route is the better fit.">
+  <meta name="twitter:image" content="https://ltx23.github.io/assets/og-cover.svg">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "LTX 2.3 API Guide",
+        "url": "https://ltx23.github.io/ltx-2-3-api/",
+        "description": "A guide to common API access patterns and when to use them."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ltx23.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "LTX 2.3 API Guide",
+            "item": "https://ltx23.github.io/ltx-2-3-api/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who needs LTX 2.3 API access?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "API access is usually most relevant for developers, product teams, and automation workflows that need programmatic generation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I want to try LTX 2.3 without coding?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A hosted online alternative is usually the fastest route for non-technical users or anyone validating prompts before building integrations."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="../">
+          <img src="../assets/logo.svg" alt="LTX 2.3 Guide logo" width="36" height="36">
+          <span>LTX 2.3 Guide</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <a href="../">Home</a>
+          <a href="../ltx-2-3-free/">Free Guide</a>
+          <a href="../ltx-2-3-comfyui/">ComfyUI</a>
+          <a href="./" aria-current="page">API</a>
+          <a href="../ltx-2-3-system-requirements/">System Requirements</a>
+          <a class="nav-cta" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try on AICovea</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">LTX 2.3 API</p>
+          <h1>LTX 2.3 API Guide</h1>
+          <p class="lead">This guide covers what people usually mean by the API route, who needs it, and when a lighter no-code path is the better decision.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>What Is the LTX 2.3 API</h2>
+          <p>The API route is usually discussed as a programmatic way to access the model inside apps, automations, or internal content systems. Developers look for this because they need more than an interface. They want to send structured inputs, manage requests, and route outputs into a broader workflow.</p>
+          <p>These searches also come from startup teams evaluating product feasibility. Before building around the model, they want to know whether the integration path is manageable and whether initial testing can happen quickly.</p>
+          <p class="context-note">Non-technical users can skip the API route and <a href="../">start online</a> or use the <a href="../ltx-2-3-free/">free guide</a> first.</p>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container narrow">
+          <h2>Who Needs API Access</h2>
+          <p>API access is mainly useful for developers, product teams, automation builders, and anyone who needs generation to happen inside another system. A direct API path makes sense when the interface is not the destination and the model becomes one component in a larger flow.</p>
+          <p>A team may want to generate marketing clips from structured data, test prompt variants at scale, or connect generation to approval and publishing tools. In those cases, the API matters more than the front end.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container quick-panel narrow">
+          <div>
+            <h2>Quick Links</h2>
+            <p>These related pages help if your next step is lighter, more visual, or more focused on setup decisions.</p>
+          </div>
+          <div class="quick-link-grid">
+            <a class="quick-link" href="../">Online Guide</a>
+            <a class="quick-link" href="../ltx-2-3-free/">Free Guide</a>
+            <a class="quick-link" href="../ltx-2-3-comfyui/">ComfyUI Workflow</a>
+            <a class="quick-link" href="../ltx-2-3-system-requirements/">System Requirements</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container narrow">
+          <h2>Common API Use Cases</h2>
+          <h3>Prompt testing at scale</h3>
+          <p>Instead of testing prompts one by one in a UI, teams may send batches of prompt variants and compare output patterns more systematically.</p>
+          <h3>App and workflow integration</h3>
+          <p>Some users want to trigger video generation from another product surface, such as an internal dashboard or a creator tool.</p>
+          <h3>Automation and scheduling</h3>
+          <p>API access can support scheduled generation, queue-based processing, or workflow orchestration where video creation is one step among many.</p>
+          <h3>Operational consistency</h3>
+          <p>For some teams, API usage is less about flexibility and more about predictable handoffs between prompt creation, generation, review, and export.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>Fastest Way to Try It</h2>
+          <p>Even for technical users, the fastest way to evaluate whether the model is worth deeper integration is often a hosted online workflow first. That gives you a quick feel for prompt behavior, output style, and workflow expectations before you design anything around an API.</p>
+          <p>This is also the best path for non-technical users. If you do not need code-level access, a no-code interface is often the most practical option.</p>
+          <div class="cta-card">
+            <h3>No-Code Online Alternative</h3>
+            <p>Use AICovea if you want to try LTX 2.3 online before deciding whether API access is necessary.</p>
+            <a class="button button-primary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 Online</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container narrow">
+          <h2>FAQ</h2>
+          <div class="faq-list">
+            <article class="faq-item">
+              <h3>Do I need the API to use the model?</h3>
+              <p>No. Many users begin with a web-based workflow. API access becomes important when you need programmatic control or product integration.</p>
+            </article>
+            <article class="faq-item">
+              <h3>What do developers usually look for here?</h3>
+              <p>They often look for stable request patterns, integration flexibility, predictable processing, and a practical testing path before implementation work.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Can non-technical users skip the API entirely?</h3>
+              <p>Yes. If your goal is to generate content rather than build software, an online alternative is usually the simpler and faster route.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>Related Guides</h2>
+          <div class="card-grid card-grid-compact">
+            <article class="link-card">
+              <h3><a href="../">Online Guide</a></h3>
+              <p>Use the homepage for a broader overview of online usage, free access, and workflow choices.</p>
+            </article>
+            <article class="link-card">
+              <h3><a href="../ltx-2-3-free/">Free Guide</a></h3>
+              <p>Read this if you want a lighter route before making a technical decision.</p>
+            </article>
+            <article class="link-card">
+              <h3><a href="../ltx-2-3-comfyui/">ComfyUI Workflow Guide</a></h3>
+              <p>Compare API integration with a node-based workflow for more hands-on control.</p>
+            </article>
+            <article class="link-card">
+              <h3><a href="../ltx-2-3-system-requirements/">System Requirements</a></h3>
+              <p>Review whether local hardware planning is necessary or if an online route is enough.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container cta-banner">
+          <div>
+            <p class="eyebrow">AICovea</p>
+            <h2>Start With the Simplest Workflow</h2>
+            <p>Use AICovea to evaluate the model quickly, then move into API work later if your team needs automation or deeper integration.</p>
+          </div>
+          <div class="button-row">
+            <a class="button button-primary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 on AICovea</a>
+            <a class="button button-secondary" href="../ltx-2-3-free/">See the Free Guide</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="../">
+            <img src="../assets/logo.svg" alt="LTX 2.3 Guide logo" width="32" height="32">
+            <span>LTX 2.3 Guide</span>
+          </a>
+          <p class="footer-copy">Practical pages for users researching online access, free paths, API workflows, and local setup planning.</p>
+        </div>
+        <div>
+          <h3>Related Pages</h3>
+          <ul class="footer-links">
+            <li><a href="../">Home</a></li>
+            <li><a href="../ltx-2-3-free/">Free Guide</a></li>
+            <li><a href="../ltx-2-3-comfyui/">ComfyUI Workflow</a></li>
+            <li><a href="../ltx-2-3-system-requirements/">System Requirements</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>AICovea</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.aicovea.com/" target="_blank" rel="noopener noreferrer">Homepage</a></li>
+            <li><a href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Model Page</a></li>
+            <li><a href="https://www.aicovea.com/pricing" target="_blank" rel="noopener noreferrer">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span data-year></span> LTX 2.3 Guide</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/script.js"></script>
+</body>
+</html>

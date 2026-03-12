@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">LTX 2.3 Guide Logo</title>
+  <desc id="desc">A monochrome geometric logo for the LTX 2.3 guide website.</desc>
+  <rect width="120" height="120" rx="26" fill="#050505"/>
+  <path d="M26 28h18v46h50v18H26z" fill="#f5f5f5"/>
+  <path d="M58 28h36v14H72v14h18v14H72v22H58z" fill="#bdbdbd"/>
+</svg>

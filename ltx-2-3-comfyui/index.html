@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LTX 2.3 ComfyUI Workflow Guide</title>
+  <meta name="description" content="Learn how LTX 2.3 fits into ComfyUI, who should use this workflow, and when an online path may be easier for faster testing before local setup.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ltx23.github.io/ltx-2-3-comfyui/">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="LTX 2.3 ComfyUI Workflow Guide">
+  <meta property="og:description" content="A practical overview of the ComfyUI workflow, who it fits, and when a lighter online alternative may be easier.">
+  <meta property="og:url" content="https://ltx23.github.io/ltx-2-3-comfyui/">
+  <meta property="og:site_name" content="LTX 2.3 Guide">
+  <meta property="og:image" content="https://ltx23.github.io/assets/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LTX 2.3 ComfyUI Workflow Guide">
+  <meta name="twitter:description" content="See who should use ComfyUI, how the workflow usually works, and why some users start with an online route first.">
+  <meta name="twitter:image" content="https://ltx23.github.io/assets/og-cover.svg">
+  <link rel="stylesheet" href="../assets/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "LTX 2.3 ComfyUI Workflow Guide",
+        "url": "https://ltx23.github.io/ltx-2-3-comfyui/",
+        "description": "A tutorial-style overview of how LTX 2.3 fits into a ComfyUI workflow."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ltx23.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "LTX 2.3 ComfyUI Workflow Guide",
+            "item": "https://ltx23.github.io/ltx-2-3-comfyui/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who should use an LTX 2.3 ComfyUI workflow?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It usually fits technical creators, workflow-oriented users, and teams that want more visual control over prompt and generation steps."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is ComfyUI the fastest way to try LTX 2.3?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not usually. ComfyUI offers flexibility, but an online alternative is often faster when you want to test prompts immediately."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="../">
+          <img src="../assets/logo.svg" alt="LTX 2.3 Guide logo" width="36" height="36">
+          <span>LTX 2.3 Guide</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <a href="../">Home</a>
+          <a href="../ltx-2-3-free/">Free Guide</a>
+          <a href="./" aria-current="page">ComfyUI</a>
+          <a href="../ltx-2-3-api/">API</a>
+          <a href="../ltx-2-3-system-requirements/">System Requirements</a>
+          <a class="nav-cta" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try on AICovea</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">LTX 2.3 ComfyUI</p>
+          <h1>LTX 2.3 ComfyUI Workflow Guide</h1>
+          <p class="lead">This page explains what a ComfyUI workflow usually looks like, who benefits from it, and when a lighter online path may save time.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>What Is LTX 2.3 ComfyUI Workflow</h2>
+          <p>A ComfyUI workflow usually means running the model inside a node-based environment where prompts, model loading, generation steps, and output handling can be arranged visually. Many users look for this route because it feels more controllable than a basic web form and easier to inspect than a raw script.</p>
+          <p>Workflows like this are useful when you want repeatability. Instead of re-entering every setting each time, you keep a structure that is easier to refine, reuse, and document.</p>
+          <p class="context-note">If you want a lighter path, start with the <a href="../">online guide</a> and move into ComfyUI only when you know you need more control.</p>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container narrow">
+          <h2>Who Should Use It</h2>
+          <p>This route is often a good match for users who are comfortable with local tools and want more visibility into how generation steps connect. That may include technical creators, researchers, or teams documenting repeatable internal workflows.</p>
+          <p>If you mainly want to answer the question “what can this model do?” an online route is usually faster. If you already know you want workflow visibility and reusable building blocks, ComfyUI becomes much more attractive.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container quick-panel narrow">
+          <div>
+            <h2>Quick Links</h2>
+            <p>These related pages cover the lighter and more technical paths around the same model intent.</p>
+          </div>
+          <div class="quick-link-grid">
+            <a class="quick-link" href="../">Online Guide</a>
+            <a class="quick-link" href="../ltx-2-3-free/">Free Guide</a>
+            <a class="quick-link" href="../ltx-2-3-api/">API Guide</a>
+            <a class="quick-link" href="../ltx-2-3-system-requirements/">System Requirements</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container narrow">
+          <h2>Basic Workflow Overview</h2>
+          <h3>1. Prepare the local environment</h3>
+          <p>A typical workflow starts with making sure the local environment is ready, which may include required tools, model files, and workflow components that can see the right resources.</p>
+          <h3>2. Load the model and define the prompt flow</h3>
+          <p>Users usually connect prompt inputs, generation logic, and output nodes in a visual chain. The benefit is not only generation itself, but the ability to inspect and adjust each stage.</p>
+          <h3>3. Run short tests before full iterations</h3>
+          <p>Many users begin with smaller exploratory runs to validate motion wording, scene structure, and prompt direction before making the workflow more detailed.</p>
+          <h3>4. Save reusable versions</h3>
+          <p>Reusable versions are one of the biggest advantages of this route. Good naming and simple notes can save time later.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>Tips for Better Results</h2>
+          <div class="card-grid">
+            <article class="info-card">
+              <h3>Separate subject and motion</h3>
+              <p>Prompts are often easier to debug when the core subject description and motion instructions are written as distinct parts.</p>
+            </article>
+            <article class="info-card">
+              <h3>Keep workflow versions small</h3>
+              <p>Create small variants so you can see what changed instead of modifying everything at once.</p>
+            </article>
+            <article class="info-card">
+              <h3>Validate ideas online first</h3>
+              <p>If the local path feels slow, test the prompt direction in a web interface first and only bring stronger ideas back into the workflow.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container narrow">
+          <h2>Common Questions</h2>
+          <div class="faq-list">
+            <article class="faq-item">
+              <h3>Is this good for beginners?</h3>
+              <p>It can be, but only if the user is comfortable learning a more technical interface. For many beginners, an online alternative is easier for the first round of testing.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Why do users look for workflow templates?</h3>
+              <p>Templates reduce the initial setup burden and help users understand the logic of a working pipeline before customizing it.</p>
+            </article>
+            <article class="faq-item">
+              <h3>When should I avoid the local workflow route?</h3>
+              <p>If your priority is speed, simple prompt experimentation, or non-technical collaboration, a hosted online workflow may be the better place to start.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>Related Guides</h2>
+          <div class="card-grid card-grid-compact">
+            <article class="link-card">
+              <h3><a href="../">Online Guide</a></h3>
+              <p>Use the main hub if you want a broader overview of online usage, free access, and path selection.</p>
+            </article>
+            <article class="link-card">
+              <h3><a href="../ltx-2-3-free/">Free Guide</a></h3>
+              <p>See the lighter path if your goal is simply to try the model without a heavier workflow.</p>
+            </article>
+            <article class="link-card">
+              <h3><a href="../ltx-2-3-api/">API Guide</a></h3>
+              <p>Compare a developer integration path with a node-based local workflow.</p>
+            </article>
+            <article class="link-card">
+              <h3><a href="../ltx-2-3-system-requirements/">System Requirements</a></h3>
+              <p>Review setup considerations before committing to the local route.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container cta-banner">
+          <div>
+            <p class="eyebrow">Online Alternative</p>
+            <h2>Need a Simpler Way to Try It?</h2>
+            <p>If you do not want to manage workflow setup, use AICovea as a quicker entry point for prompt testing and general AI video exploration.</p>
+          </div>
+          <div class="button-row">
+            <a class="button button-primary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 on AICovea</a>
+            <a class="button button-secondary" href="../ltx-2-3-free/">Read the Free Guide</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="../">
+            <img src="../assets/logo.svg" alt="LTX 2.3 Guide logo" width="32" height="32">
+            <span>LTX 2.3 Guide</span>
+          </a>
+          <p class="footer-copy">Guides focused on online usage, free access, API choices, workflow structure, and hardware planning.</p>
+        </div>
+        <div>
+          <h3>Related Pages</h3>
+          <ul class="footer-links">
+            <li><a href="../">Home</a></li>
+            <li><a href="../ltx-2-3-free/">Free Guide</a></li>
+            <li><a href="../ltx-2-3-api/">API Guide</a></li>
+            <li><a href="../ltx-2-3-system-requirements/">System Requirements</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>AICovea</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.aicovea.com/" target="_blank" rel="noopener noreferrer">Homepage</a></li>
+            <li><a href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Model Page</a></li>
+            <li><a href="https://www.aicovea.com/pricing" target="_blank" rel="noopener noreferrer">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span data-year></span> LTX 2.3 Guide</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/script.js"></script>
+</body>
+</html>
