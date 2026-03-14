@@ -75,6 +75,14 @@
               "@type": "Answer",
               "text": "They usually want to know whether their current hardware is likely to handle a local workflow or whether a hosted alternative would be more practical."
             }
+          },
+          {
+            "@type": "Question",
+            "name": "How is the desktop guide different from the system requirements page?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The desktop guide is about fit and usage style, while the system requirements page is about the heavier hardware and setup implications of going local."
+            }
           }
         ]
       }
@@ -96,11 +104,14 @@
         </button>
         <nav id="site-nav" class="site-nav">
           <a href="../">Home</a>
-          <a href="../ltx-2-3-free/">Free Guide</a>
+          <a href="../ltx-2-3-prompt-guide/">Prompt Guide</a>
+          <a href="../ltx-2-3-github/">GitHub</a>
+          <a href="../ltx-2-3-desktop/">Desktop</a>
           <a href="../ltx-2-3-comfyui/">ComfyUI</a>
           <a href="../ltx-2-3-api/">API</a>
           <a href="./" aria-current="page">System Requirements</a>
-          <a class="nav-cta" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try on AICovea</a>
+          <a href="../ltx-2-3-free/">Free</a>
+          <a class="nav-cta" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 Free</a>
         </nav>
       </div>
     </header>
@@ -119,7 +130,7 @@
           <h2>What You Need to Run It</h2>
           <p>People searching for system requirements are usually trying to answer a practical question: can their current machine support a local workflow, or should they use an online service instead? The answer depends on more than one number. Local use is shaped by the full workflow around the model, not just the model name itself.</p>
           <p>In general, you should expect local usage to involve capable hardware, enough storage for surrounding assets and dependencies, and the patience to manage updates and troubleshooting.</p>
-          <p class="context-note">If local setup feels heavy, start with an <a href="../">online route</a> or the <a href="../ltx-2-3-free/">free guide</a> first.</p>
+          <p class="context-note">If local setup feels heavy, start with an <a href="../">online route</a> or the <a href="../ltx-2-3-free/">free guide</a> first. If you are still comparing lifestyle fit rather than hardware fit, read the <a href="../ltx-2-3-desktop/">desktop guide</a>.</p>
         </div>
       </section>
 
@@ -138,21 +149,6 @@
       </section>
 
       <section class="section">
-        <div class="container quick-panel narrow">
-          <div>
-            <h2>Quick Links</h2>
-            <p>These pages help if you want to compare a heavier local route with simpler online or workflow alternatives.</p>
-          </div>
-          <div class="quick-link-grid">
-            <a class="quick-link" href="../">Online Guide</a>
-            <a class="quick-link" href="../ltx-2-3-free/">Free Guide</a>
-            <a class="quick-link" href="../ltx-2-3-api/">API Guide</a>
-            <a class="quick-link" href="../ltx-2-3-comfyui/">ComfyUI Workflow</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section alt-section">
         <div class="container narrow">
           <h2>Local Workflow Basics</h2>
           <h3>Prepare the environment</h3>
@@ -161,6 +157,21 @@
           <p>Some users prefer a script-based route. Others look for a visual workflow tool or repository-based setup instructions they can follow step by step.</p>
           <h3>Budget time for troubleshooting</h3>
           <p>Even when the hardware is acceptable, local setup still introduces version mismatches, file organization issues, and workflow debugging. That is one of the main reasons many users start online.</p>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container quick-panel narrow">
+          <div>
+            <h2>Related LTX 2.3 Guides</h2>
+            <p>These pages cover the next questions that usually appear after hardware planning starts.</p>
+          </div>
+          <div class="quick-link-grid">
+            <a class="quick-link" href="../ltx-2-3-desktop/">Desktop Guide</a>
+            <a class="quick-link" href="../ltx-2-3-comfyui/">ComfyUI Workflow</a>
+            <a class="quick-link" href="../ltx-2-3-github/">GitHub Guide</a>
+            <a class="quick-link" href="../">Home</a>
+          </div>
         </div>
       </section>
 
@@ -191,32 +202,8 @@
           <p>If you later decide you need local control, the experience you gain from prompt testing online will still help. You will move into the desktop workflow with better expectations and a clearer sense of what matters.</p>
           <div class="cta-card">
             <h3>Start Online Before Going Local</h3>
-            <p>Use AICovea to test the workflow first, then decide whether local deployment is worth it.</p>
-            <a class="button button-primary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 on AICovea</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container narrow">
-          <h2>Related Guides</h2>
-          <div class="card-grid card-grid-compact">
-            <article class="link-card">
-              <h3><a href="../">Online Guide</a></h3>
-              <p>Use the main overview page if you want the fastest path to online usage and broader model context.</p>
-            </article>
-            <article class="link-card">
-              <h3><a href="../ltx-2-3-free/">Free Guide</a></h3>
-              <p>See the lighter path if your real goal is simply to try the model before thinking about setup.</p>
-            </article>
-            <article class="link-card">
-              <h3><a href="../ltx-2-3-comfyui/">ComfyUI Workflow Guide</a></h3>
-              <p>Explore the node-based workflow angle after reviewing setup tradeoffs.</p>
-            </article>
-            <article class="link-card">
-              <h3><a href="../ltx-2-3-api/">API Guide</a></h3>
-              <p>Read the API page if your next question is integration rather than desktop setup.</p>
-            </article>
+            <p>Use an online LTX 2.3 workflow to test the model first, then decide whether local deployment is worth it.</p>
+            <a class="button button-primary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 Online</a>
           </div>
         </div>
       </section>
@@ -232,19 +219,22 @@
           <p class="footer-copy">Readable landing pages for online usage, free access, workflow setup, API research, and local hardware planning.</p>
         </div>
         <div>
-          <h3>Related Pages</h3>
+          <h3>Related Guides</h3>
           <ul class="footer-links">
-            <li><a href="../">Home</a></li>
-            <li><a href="../ltx-2-3-free/">Free Guide</a></li>
             <li><a href="../ltx-2-3-comfyui/">ComfyUI Workflow</a></li>
+            <li><a href="../ltx-2-3-free/">Free Guide</a></li>
             <li><a href="../ltx-2-3-api/">API Guide</a></li>
+            <li><a href="../ltx-2-3-system-requirements/">System Requirements</a></li>
+            <li><a href="../ltx-2-3-prompt-guide/">Prompt Guide</a></li>
+            <li><a href="../ltx-2-3-github/">GitHub Guide</a></li>
+            <li><a href="../ltx-2-3-desktop/">Desktop Guide</a></li>
           </ul>
         </div>
         <div>
-          <h3>AICovea</h3>
+          <h3>Online Access</h3>
           <ul class="footer-links">
-            <li><a href="https://www.aicovea.com/" target="_blank" rel="noopener noreferrer">Homepage</a></li>
-            <li><a href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Model Page</a></li>
+            <li><a href="https://www.aicovea.com/" target="_blank" rel="noopener noreferrer">AI Video Tools</a></li>
+            <li><a href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 Online</a></li>
             <li><a href="https://www.aicovea.com/pricing" target="_blank" rel="noopener noreferrer">Pricing</a></li>
           </ul>
         </div>

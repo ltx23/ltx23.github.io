@@ -150,13 +150,15 @@ h3 {
   color: var(--text);
 }
 
-.nav-cta {
+.site-nav .nav-cta {
   min-height: 56px;
   padding: 0.9rem 1.35rem;
   border-radius: 999px;
-  border: 1px solid var(--border-strong);
-  background: rgba(255, 255, 255, 0.04);
-  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.92);
+  background: #f2f2f2;
+  color: #0b0b0b;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.35);
+  font-weight: 600;
 }
 
 .nav-toggle {
@@ -272,7 +274,7 @@ h3 {
 
 .button:hover,
 .quick-link:hover,
-.nav-cta:hover {
+.site-nav .nav-cta:hover {
   transform: translateY(-1px);
 }
 
@@ -305,6 +307,11 @@ h3 {
 .cta-card,
 .link-card {
   padding: 1.45rem;
+}
+
+.link-card {
+  position: relative;
+  cursor: pointer;
 }
 
 .hero-card p,
@@ -354,6 +361,12 @@ h3 {
 .link-card a,
 .context-note a {
   color: var(--text);
+}
+
+.link-card h3 a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 
 .quick-panel {
