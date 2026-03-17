@@ -1,0 +1,11 @@
+{
+  "name": "ltx23-github-pages",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Static LTX 2.3 SEO microsite",
+  "scripts": {
+    "dev": "python3 scripts/dev_server.py",
+    "serve": "python3 scripts/dev_server.py"
+  },
+  "packageManager": "pnpm@10.29.3"
+}
