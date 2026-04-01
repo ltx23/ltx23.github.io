@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LTX 2.3 Image to Video</title>
+  <meta name="description" content="Use LTX 2.3 image to video workflows to turn a still image into motion, keep the scene anchored, and test results online without local setup.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ltx23.github.io/ltx-2-3-image-to-video/">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="LTX 2.3 Image to Video">
+  <meta property="og:description" content="Turn a still image into a short LTX 2.3 video workflow, compare motion directions, and test online before heavier setup.">
+  <meta property="og:url" content="https://ltx23.github.io/ltx-2-3-image-to-video/">
+  <meta property="og:site_name" content="LTX 2.3 Guide">
+  <meta property="og:image" content="https://ltx23.github.io/assets/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LTX 2.3 Image to Video">
+  <meta name="twitter:description" content="Start from one image, add intentional motion, and test LTX 2.3 image to video workflows online without local setup.">
+  <meta name="twitter:image" content="https://ltx23.github.io/assets/og-cover.svg">
+  <link rel="stylesheet" href="../assets/style.css">
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-WDq49hdyyblY0uydcLCBD.js"></script>
+  <script>
+    window.plausible = window.plausible || function() {
+      (plausible.q = plausible.q || []).push(arguments);
+    };
+    plausible.init = plausible.init || function(i) {
+      plausible.o = i || {};
+    };
+    plausible.init();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "LTX 2.3 Image to Video",
+        "url": "https://ltx23.github.io/ltx-2-3-image-to-video/",
+        "description": "A practical LTX 2.3 image to video page for users who want to animate a still image and test quickly online."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ltx23.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "LTX 2.3 Image to Video",
+            "item": "https://ltx23.github.io/ltx-2-3-image-to-video/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does LTX 2.3 image to video mean?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It usually means starting from one still image, then adding controlled motion, camera behavior, and atmosphere so the result feels like a short video instead of a static frame."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is image to video different from image to video prompts?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Image to video is the broader workflow intent. Prompt pages focus on the exact wording patterns, while this page focuses on when to use the workflow and how to test it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why test image to video online first?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because the first question is usually whether the motion direction works. Testing online lets you compare versions quickly before you spend time on local setup."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="../">
+          <img src="../assets/logo.svg" alt="LTX 2.3 Guide logo" width="36" height="36">
+          <span>LTX 2.3 Guide</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <a href="../">Home</a>
+          <a href="../ltx-2-3-prompt-guide/">Prompt Guide</a>
+          <a href="../ltx-2-3-github/">GitHub</a>
+          <a href="../ltx-2-3-desktop/">Desktop</a>
+          <a href="../ltx-2-3-comfyui/">ComfyUI</a>
+          <a href="../ltx-2-3-api/">API</a>
+          <a href="../ltx-2-3-system-requirements/">System Requirements</a>
+          <a href="../ltx-2-3-free/">Free</a>
+          <details class="nav-dropdown is-current">
+            <summary>More Guides</summary>
+            <div class="nav-dropdown-panel">
+              <a href="../ltx-2-3-online/">LTX 2.3 Online</a>
+              <a href="../ltx-2-3-browser/">Browser Guide</a>
+              <a href="../ltx-2-3-no-install/">No Install</a>
+              <a href="../ltx-2-3-workflow/">Workflow Guide</a>
+              <a href="../ltx-2-3-alternative/">Alternative Guide</a>
+              <a href="../ltx-2-3-prompt-examples/">Prompt Examples</a>
+              <a href="./" aria-current="page">Image to Video</a>
+              <a href="../ltx-2-3-image-to-video-prompts/">Image to Video Prompts</a>
+              <a href="../ltx-2-3-prompt-template/">Prompt Template</a>
+              <a href="../ltx-2-3-prompt-generator/">Prompt Generator</a>
+              <a href="../ltx-2-3-best-prompts/">Best Prompts</a>
+              <a href="../ltx-2-3-text-to-video-prompts/">Text to Video Prompts</a>
+              <a href="../ltx-2-3-cinematic-prompts/">Cinematic Prompts</a>
+              <a href="../ltx-2-3-without-local-setup/">Without Local Setup</a>
+              <a href="../ltx-2-3-first-frame-last-frame/">First-Frame Last-Frame</a>
+            </div>
+          </details>
+          <a class="nav-cta" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 Free</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">LTX 2.3 Image to Video</p>
+          <h1>LTX 2.3 Image to Video</h1>
+          <p class="lead">LTX 2.3 image to video usually means you already have the frame, mood, or composition. What you need next is controlled motion that makes the image feel alive without destroying the original visual idea.</p>
+          <p>This page is built for that workflow: start from a still image, choose the right kind of movement, and test the result online before you make the process heavier than it needs to be.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try Image to Video Online</a>
+            <a class="button button-secondary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">See Image to Video Prompts</a>
+          </div>
+          <ul class="hero-points">
+            <li>Built for still-image-to-motion workflow intent</li>
+            <li>Best for testing movement before heavier setup</li>
+            <li>Clear handoff into browser-based LTX 2.3 use</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>What LTX 2.3 Image to Video Is Good For</h2>
+          <p>The image to video workflow works best when the original image already carries the look you want. Instead of inventing the whole scene from zero, you keep the composition and use motion to add energy, emotion, or commercial polish.</p>
+          <div class="stat-grid">
+            <article class="stat-card">
+              <span class="stat-number">Product</span>
+              <h3>Commercial reveals</h3>
+              <p>Turn a clean product shot into a short premium motion clip without rebuilding the whole idea.</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-number">Portrait</span>
+              <h3>Subtle character motion</h3>
+              <p>Add eye movement, head turns, hair motion, or camera drift while keeping the original portrait intact.</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-number">Scene</span>
+              <h3>Environmental atmosphere</h3>
+              <p>Use weather, smoke, light movement, or parallax camera cues to make a still scene feel active.</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-number">Social</span>
+              <h3>Short-form hooks</h3>
+              <p>Start from one strong image and build a concise motion beat for ads, clips, or concept tests.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container narrow">
+          <h2>How to Keep the Image Anchor While Adding Motion</h2>
+          <p>The biggest mistake in image to video workflows is adding too much too early. The image already does part of the job. The prompt and motion layer should extend it, not fight it.</p>
+          <div class="step-grid">
+            <article class="step-card">
+              <span class="step-index">1</span>
+              <h3>Lock the subject first</h3>
+              <p>Keep the main composition, subject, and shot identity close to the still image so the output does not drift into another scene.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-index">2</span>
+              <h3>Add one motion family</h3>
+              <p>Choose one kind of movement such as reveal, drift, expression shift, or environment motion instead of piling on several at once.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-index">3</span>
+              <h3>Test camera separately</h3>
+              <p>Once the motion works, tune the camera move. A slow push-in and an orbit can change the feel more than extra style words do.</p>
+            </article>
+          </div>
+          <p class="context-note">If you want exact wording patterns for this workflow, the next page to open is <a href="../ltx-2-3-image-to-video-prompts/">image to video prompts</a>. If you want a reusable structure, use the <a href="../ltx-2-3-prompt-generator/">prompt generator</a> or <a href="../ltx-2-3-prompt-template/">prompt template</a>.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>Example Image to Video Directions</h2>
+          <div class="prompt-grid">
+            <article class="prompt-card">
+              <span class="prompt-tag">Beauty</span>
+              <h3>Luxury product image</h3>
+              <div class="prompt-copy">
+                <p>Keep the bottle fixed as the hero object, add a slow orbit camera, a passing highlight, and gentle mist so the image becomes a premium short commercial beat.</p>
+              </div>
+            </article>
+            <article class="prompt-card">
+              <span class="prompt-tag">Portrait</span>
+              <h3>Editorial still portrait</h3>
+              <div class="prompt-copy">
+                <p>Preserve the close framing, then introduce a slight head turn, subtle eye contact change, and soft hair movement for a more human result.</p>
+              </div>
+            </article>
+            <article class="prompt-card">
+              <span class="prompt-tag">Landscape</span>
+              <h3>Atmospheric scene</h3>
+              <div class="prompt-copy">
+                <p>Use ripples, drifting fog, or a slow aerial glide to animate the environment while keeping the original composition recognizable.</p>
+              </div>
+            </article>
+            <article class="prompt-card">
+              <span class="prompt-tag">Food</span>
+              <h3>Short ad visual</h3>
+              <div class="prompt-copy">
+                <p>Turn one clean food still into a satisfying motion clip with a reveal movement, texture emphasis, and one quick camera adjustment.</p>
+              </div>
+            </article>
+          </div>
+          <div class="quick-panel spaced-block">
+            <p class="eyebrow">Related Guides</p>
+            <div class="quick-link-grid">
+              <a class="quick-link" href="../ltx-2-3-image-to-video-prompts/">Image to Video Prompts</a>
+              <a class="quick-link" href="../ltx-2-3-prompt-generator/">Prompt Generator</a>
+              <a class="quick-link" href="../ltx-2-3-online/">LTX 2.3 Online</a>
+              <a class="quick-link" href="../ltx-2-3-without-local-setup/">Without Local Setup</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container narrow">
+          <h2>FAQ</h2>
+          <div class="faq-list">
+            <article class="faq-item">
+              <h3>What does LTX 2.3 image to video mean?</h3>
+              <p>It means starting from a still image and adding motion in a controlled way so the output feels like a short video rather than an animated accident.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Is image to video the same as image to video prompts?</h3>
+              <p>No. This page covers the workflow intent. Prompt pages focus more tightly on wording patterns and reusable phrasing.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Should I test image to video online first?</h3>
+              <p>Usually yes. Online testing is faster when you are trying to understand whether the motion direction works before you touch a local workflow.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-banner">
+          <div>
+            <p class="eyebrow">Image to Video Workflow</p>
+            <h3 class="banner-title">Start From the Image, Then Test the Motion Online</h3>
+            <p>If your still frame already works, the practical next step is not more theory. It is testing the right motion direction in AICovea and keeping the versions that hold the original image together.</p>
+          </div>
+          <div class="button-row">
+            <a class="button button-primary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Generate a Similar Video Online</a>
+            <a class="button button-secondary" href="../ltx-2-3-image-to-video-prompts/">Use an Image to Video Prompt</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="../">
+            <img src="../assets/logo.svg" alt="LTX 2.3 Guide logo" width="32" height="32">
+            <span>LTX 2.3 Guide</span>
+          </a>
+          <p class="footer-copy">A browser-first LTX 2.3 guide network built around prompt quality, online testing, and practical workflow choices.</p>
+        </div>
+        <div>
+          <h3>Related Guides</h3>
+          <ul class="footer-links">
+            <li><a href="../ltx-2-3-image-to-video-prompts/">Image to Video Prompts</a></li>
+            <li><a href="../ltx-2-3-prompt-generator/">Prompt Generator</a></li>
+            <li><a href="../ltx-2-3-prompt-template/">Prompt Template</a></li>
+            <li><a href="../ltx-2-3-online/">Online Guide</a></li>
+            <li><a href="../ltx-2-3-without-local-setup/">Without Local Setup</a></li>
+            <li><a href="../ltx-2-3-free/">Free Guide</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Try LTX 2.3</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.aicovea.com/" target="_blank" rel="noopener noreferrer">AI Video Tools</a></li>
+            <li><a href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 Online</a></li>
+            <li><a href="https://www.aicovea.com/pricing" target="_blank" rel="noopener noreferrer">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span data-year></span> LTX 2.3 Guide</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/script.js"></script>
+</body>
+</html>
