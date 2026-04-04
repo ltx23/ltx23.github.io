@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LTX 2.3 Text to Video</title>
+  <meta name="description" content="Understand the LTX 2.3 text to video workflow, when to start from text instead of images, and how to test scenes online without local setup.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ltx23.github.io/ltx-2-3-text-to-video/">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="LTX 2.3 Text to Video">
+  <meta property="og:description" content="A workflow page for LTX 2.3 text to video users who want to shape scenes from words first and test them online fast.">
+  <meta property="og:url" content="https://ltx23.github.io/ltx-2-3-text-to-video/">
+  <meta property="og:site_name" content="LTX 2.3 Guide">
+  <meta property="og:image" content="https://ltx23.github.io/assets/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LTX 2.3 Text to Video">
+  <meta name="twitter:description" content="Start from a clean text prompt, structure motion and camera clearly, and test LTX 2.3 text to video scenes online.">
+  <meta name="twitter:image" content="https://ltx23.github.io/assets/og-cover.svg">
+  <link rel="stylesheet" href="../assets/style.css">
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-WDq49hdyyblY0uydcLCBD.js"></script>
+  <script>
+    window.plausible = window.plausible || function() {
+      (plausible.q = plausible.q || []).push(arguments);
+    };
+    plausible.init = plausible.init || function(i) {
+      plausible.o = i || {};
+    };
+    plausible.init();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "LTX 2.3 Text to Video",
+        "url": "https://ltx23.github.io/ltx-2-3-text-to-video/",
+        "description": "A practical page for LTX 2.3 text to video workflows, scene planning, and browser-first testing."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ltx23.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "LTX 2.3 Text to Video",
+            "item": "https://ltx23.github.io/ltx-2-3-text-to-video/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "When should I use LTX 2.3 text to video instead of image to video?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use text to video when the scene still lives in words and you want the model to invent the shot from the prompt instead of preserving a fixed starting frame."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the fastest way to test text to video ideas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A browser workflow is usually the fastest because you can compare nearby prompt variations without local setup overhead."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do text to video prompts need to be long?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The better starting point is a short prompt with a clear subject, motion, camera cue, and mood, then revise from there."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="../">
+          <img src="../assets/logo.svg" alt="LTX 2.3 Guide logo" width="36" height="36">
+          <span>LTX 2.3 Guide</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <a href="../">Home</a>
+          <a href="../ltx-2-3-prompt-guide/">Prompt Guide</a>
+          <a href="../ltx-2-3-github/">GitHub</a>
+          <a href="../ltx-2-3-desktop/">Desktop</a>
+          <a href="../ltx-2-3-comfyui/">ComfyUI</a>
+          <a href="../ltx-2-3-api/">API</a>
+          <a href="../ltx-2-3-system-requirements/">System Requirements</a>
+          <a href="../ltx-2-3-free/">Free</a>
+          <details class="nav-dropdown is-current">
+            <summary>More Guides</summary>
+            <div class="nav-dropdown-panel">
+              <a href="../ltx-2-3-online/">LTX 2.3 Online</a>
+              <a href="../ltx-2-3-video-generator/">Video Generator</a>
+              <a href="../ltx-2-3-browser/">Browser Guide</a>
+              <a href="../ltx-2-3-no-install/">No Install</a>
+              <a href="../ltx-2-3-workflow/">Workflow Guide</a>
+              <a href="../ltx-2-3-alternative/">Alternative Guide</a>
+              <a href="../ltx-2-3-prompt-examples/">Prompt Examples</a>
+              <a href="../ltx-2-3-image-to-video/">Image to Video</a>
+              <a href="../ltx-2-3-image-to-video-examples/">Image to Video Examples</a>
+              <a href="../ltx-2-3-image-to-video-prompts/">Image to Video Prompts</a>
+              <a href="../ltx-2-3-prompt-template/">Prompt Template</a>
+              <a href="../ltx-2-3-prompt-generator/">Prompt Generator</a>
+              <a href="../ltx-2-3-prompt-builder/">Prompt Builder</a>
+              <a href="../ltx-2-3-best-prompts/">Best Prompts</a>
+              <a href="./" aria-current="page">Text to Video</a>
+              <a href="../ltx-2-3-text-to-video-prompts/">Text to Video Prompts</a>
+              <a href="../ltx-2-3-cinematic-prompts/">Cinematic Prompts</a>
+              <a href="../ltx-2-3-without-local-setup/">Without Local Setup</a>
+              <a href="../ltx-2-3-first-frame-last-frame/">First-Frame Last-Frame</a>
+            </div>
+          </details>
+          <a class="nav-cta" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 Free</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">LTX 2.3 Text to Video</p>
+          <h1>LTX 2.3 Text to Video</h1>
+          <p class="lead">LTX 2.3 text to video is the right starting point when the scene exists in words, not in a reference image. You want to define the shot from language first, then refine the result without dragging a local workflow into the process too early.</p>
+          <p>This page focuses on that broader workflow intent: when text-first generation makes sense, how to structure the first run, and how to keep testing fast in browser.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Generate From Text Online</a>
+            <a class="button button-secondary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Use Text to Video Prompts</a>
+          </div>
+          <ul class="hero-points">
+            <li>Built for text-first workflow intent</li>
+            <li>Good for scene planning before heavier tooling</li>
+            <li>Pairs naturally with prompt pages and browser testing</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>When Text to Video Is the Better Starting Point</h2>
+          <p>Text to video is strongest when you are still deciding what the scene should become. It gives you freedom to invent the frame, camera, and motion all at once instead of inheriting constraints from a source image.</p>
+          <div class="stat-grid">
+            <article class="stat-card">
+              <span class="stat-number">Concept</span>
+              <h3>Early ideation</h3>
+              <p>Useful when the subject, composition, or visual world still needs to be explored rather than preserved.</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-number">Pitch</span>
+              <h3>Quick scene direction</h3>
+              <p>Helps teams compare several creative directions quickly before any deeper production planning.</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-number">Prompt</span>
+              <h3>Reusable structures</h3>
+              <p>Good prompt patterns can be reused across subjects once the core scene logic is proven.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container narrow">
+          <h2>How to Structure a First LTX 2.3 Text to Video Run</h2>
+          <div class="step-grid">
+            <article class="step-card">
+              <span class="step-index">1</span>
+              <h3>Anchor the subject</h3>
+              <p>Start with the one thing the viewer should notice first. If the subject is vague, the rest of the prompt usually becomes harder to control.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-index">2</span>
+              <h3>Name one motion family</h3>
+              <p>Use one motion idea such as walking, rotating, revealing, or drifting. That makes it easier to compare versions without prompt noise.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-index">3</span>
+              <h3>Add camera and mood last</h3>
+              <p>Once the scene logic reads clearly, add the camera move and atmosphere. Those cues shape the output, but they work best after the base scene is stable.</p>
+            </article>
+          </div>
+          <p class="context-note">If you need exact phrases, go next to the <a href="../ltx-2-3-text-to-video-prompts/">text to video prompts page</a>. If you want a broader generate-now path, use the <a href="../ltx-2-3-video-generator/">video generator page</a>. If you already have a still frame, the better fit is usually <a href="../ltx-2-3-image-to-video/">image to video</a>.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>Text to Video vs Image to Video</h2>
+          <div class="table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Question</th>
+                  <th>Text to video</th>
+                  <th>Image to video</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Do I already have the frame?</td>
+                  <td>No, I want the model to invent it</td>
+                  <td>Yes, I want to preserve the source image</td>
+                </tr>
+                <tr>
+                  <td>What am I testing first?</td>
+                  <td>Scene wording and shot construction</td>
+                  <td>Motion direction around an existing image</td>
+                </tr>
+                <tr>
+                  <td>Best next page</td>
+                  <td><a href="../ltx-2-3-text-to-video-prompts/">Text to Video Prompts</a></td>
+                  <td><a href="../ltx-2-3-image-to-video-examples/">Image to Video Examples</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="quick-panel spaced-block">
+            <p class="eyebrow">Related Guides</p>
+            <div class="quick-link-grid">
+              <a class="quick-link" href="../ltx-2-3-text-to-video-prompts/">Text to Video Prompts</a>
+              <a class="quick-link" href="../ltx-2-3-prompt-builder/">Prompt Builder</a>
+              <a class="quick-link" href="../ltx-2-3-image-to-video/">Image to Video</a>
+              <a class="quick-link" href="../ltx-2-3-video-generator/">Video Generator</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container narrow">
+          <h2>FAQ</h2>
+          <div class="faq-list">
+            <article class="faq-item">
+              <h3>When should I use LTX 2.3 text to video instead of image to video?</h3>
+              <p>Use text to video when you want the model to build the scene from language. If the shot already exists as a still frame, image to video is usually the better path.</p>
+            </article>
+            <article class="faq-item">
+              <h3>What is the fastest way to test text to video ideas?</h3>
+              <p>Run them in browser. That makes it easier to compare prompt versions and revise the scene logic without spending time on setup work.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Do text to video prompts need to be long?</h3>
+              <p>No. Clear scene structure matters more than length. Start short, then add detail only after the core prompt holds together.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-banner">
+          <div>
+            <p class="eyebrow">Text-First Workflow</p>
+            <h3 class="banner-title">Start From Words, Then Test the Scene in Browser</h3>
+            <p>If your idea still lives in language, keep the workflow light. Shape the scene, compare a few prompt variations, and only add more complexity after a strong version appears.</p>
+          </div>
+          <div class="button-row">
+            <a class="button button-primary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Test Text to Video Online</a>
+            <a class="button button-secondary" href="../ltx-2-3-text-to-video-prompts/">Use a Ready Prompt Pattern</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="../">
+            <img src="../assets/logo.svg" alt="LTX 2.3 Guide logo" width="32" height="32">
+            <span>LTX 2.3 Guide</span>
+          </a>
+          <p class="footer-copy">A browser-first LTX 2.3 guide network built around prompt quality, online testing, and low-friction workflow choices.</p>
+        </div>
+        <div>
+          <h3>Related Guides</h3>
+          <ul class="footer-links">
+            <li><a href="../ltx-2-3-text-to-video-prompts/">Text to Video Prompts</a></li>
+            <li><a href="../ltx-2-3-prompt-builder/">Prompt Builder</a></li>
+            <li><a href="../ltx-2-3-prompt-guide/">Prompt Guide</a></li>
+            <li><a href="../ltx-2-3-image-to-video/">Image to Video</a></li>
+            <li><a href="../ltx-2-3-image-to-video-examples/">Image to Video Examples</a></li>
+            <li><a href="../ltx-2-3-video-generator/">Video Generator</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Try LTX 2.3</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.aicovea.com/" target="_blank" rel="noopener noreferrer">AI Video Tools</a></li>
+            <li><a href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 Online</a></li>
+            <li><a href="https://www.aicovea.com/pricing" target="_blank" rel="noopener noreferrer">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span data-year></span> LTX 2.3 Guide</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/script.js"></script>
+</body>
+</html>

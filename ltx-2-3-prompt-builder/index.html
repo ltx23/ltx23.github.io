@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LTX 2.3 Prompt Builder</title>
+  <meta name="description" content="Use this LTX 2.3 prompt builder to assemble scene blocks faster, create clearer video prompts, and move straight into browser testing.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ltx23.github.io/ltx-2-3-prompt-builder/">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="LTX 2.3 Prompt Builder">
+  <meta property="og:description" content="A reusable LTX 2.3 prompt builder for users who want to lock scene structure first and test prompts online faster.">
+  <meta property="og:url" content="https://ltx23.github.io/ltx-2-3-prompt-builder/">
+  <meta property="og:site_name" content="LTX 2.3 Guide">
+  <meta property="og:image" content="https://ltx23.github.io/assets/og-cover.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="LTX 2.3 Prompt Builder">
+  <meta name="twitter:description" content="Build an LTX 2.3 prompt from structured scene parts, copy the result, and test it in browser without blank-page friction.">
+  <meta name="twitter:image" content="https://ltx23.github.io/assets/og-cover.svg">
+  <link rel="stylesheet" href="../assets/style.css">
+  <!-- Privacy-friendly analytics by Plausible -->
+  <script async src="https://plausible.io/js/pa-WDq49hdyyblY0uydcLCBD.js"></script>
+  <script>
+    window.plausible = window.plausible || function() {
+      (plausible.q = plausible.q || []).push(arguments);
+    };
+    plausible.init = plausible.init || function(i) {
+      plausible.o = i || {};
+    };
+    plausible.init();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "LTX 2.3 Prompt Builder",
+        "url": "https://ltx23.github.io/ltx-2-3-prompt-builder/",
+        "description": "A structured prompt builder page for LTX 2.3 prompt drafting, browser testing, and repeatable scene planning."
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://ltx23.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "LTX 2.3 Prompt Builder",
+            "item": "https://ltx23.github.io/ltx-2-3-prompt-builder/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between an LTX 2.3 prompt builder and a prompt generator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A prompt builder focuses on assembling scene blocks in a useful order. A generator often implies automatic output. This page is designed around controlled building, not black-box writing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why use a prompt builder before testing in browser?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Because a structured prompt builder reduces blank-page friction and makes it easier to compare versions without losing the core scene logic."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use these prompt blocks for text to video and image to video?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The structure works for both, though image to video prompts usually stay closer to the source frame while text to video prompts can invent more of the scene."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="../">
+          <img src="../assets/logo.svg" alt="LTX 2.3 Guide logo" width="36" height="36">
+          <span>LTX 2.3 Guide</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="site-nav" class="site-nav">
+          <a href="../">Home</a>
+          <a href="../ltx-2-3-prompt-guide/">Prompt Guide</a>
+          <a href="../ltx-2-3-github/">GitHub</a>
+          <a href="../ltx-2-3-desktop/">Desktop</a>
+          <a href="../ltx-2-3-comfyui/">ComfyUI</a>
+          <a href="../ltx-2-3-api/">API</a>
+          <a href="../ltx-2-3-system-requirements/">System Requirements</a>
+          <a href="../ltx-2-3-free/">Free</a>
+          <details class="nav-dropdown is-current">
+            <summary>More Guides</summary>
+            <div class="nav-dropdown-panel">
+              <a href="../ltx-2-3-online/">LTX 2.3 Online</a>
+              <a href="../ltx-2-3-video-generator/">Video Generator</a>
+              <a href="../ltx-2-3-browser/">Browser Guide</a>
+              <a href="../ltx-2-3-no-install/">No Install</a>
+              <a href="../ltx-2-3-workflow/">Workflow Guide</a>
+              <a href="../ltx-2-3-alternative/">Alternative Guide</a>
+              <a href="../ltx-2-3-prompt-examples/">Prompt Examples</a>
+              <a href="../ltx-2-3-image-to-video/">Image to Video</a>
+              <a href="../ltx-2-3-image-to-video-examples/">Image to Video Examples</a>
+              <a href="../ltx-2-3-image-to-video-prompts/">Image to Video Prompts</a>
+              <a href="../ltx-2-3-prompt-template/">Prompt Template</a>
+              <a href="../ltx-2-3-prompt-generator/">Prompt Generator</a>
+              <a href="./" aria-current="page">Prompt Builder</a>
+              <a href="../ltx-2-3-best-prompts/">Best Prompts</a>
+              <a href="../ltx-2-3-text-to-video/">Text to Video</a>
+              <a href="../ltx-2-3-text-to-video-prompts/">Text to Video Prompts</a>
+              <a href="../ltx-2-3-cinematic-prompts/">Cinematic Prompts</a>
+              <a href="../ltx-2-3-without-local-setup/">Without Local Setup</a>
+              <a href="../ltx-2-3-first-frame-last-frame/">First-Frame Last-Frame</a>
+            </div>
+          </details>
+          <a class="nav-cta" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 Free</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container narrow">
+          <p class="eyebrow">LTX 2.3 Prompt Builder</p>
+          <h1>LTX 2.3 Prompt Builder</h1>
+          <p class="lead">This LTX 2.3 prompt builder is for users who want structure before style. Instead of improvising one long sentence, you can lock the scene blocks that actually matter, then copy the result into a browser workflow.</p>
+          <p>That makes the page useful for both first drafts and repeatable testing. The goal is not to sound clever. The goal is to create a prompt that survives revision.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Use This Prompt in Browser</a>
+            <a class="button button-secondary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Open Prompt Generator</a>
+          </div>
+          <ul class="hero-points">
+            <li>Built for prompt builder and prompt maker intent</li>
+            <li>Turns scene blocks into a usable first draft</li>
+            <li>Designed for quick online testing after copy</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>Build an LTX 2.3 Prompt</h2>
+          <p>Use the builder below to lock the scene in the right order, then copy the output into AICovea. The structure is the point. It keeps your subject, motion, camera, and finish from collapsing into one vague sentence.</p>
+          <div class="builder-shell" data-prompt-builder>
+            <div class="builder-panel">
+              <div class="builder-form">
+                <label class="builder-field">
+                  <span>Subject</span>
+                  <input type="text" value="Glass perfume bottle" data-prompt-part placeholder="Example: robot chef, sneaker, fantasy traveler">
+                </label>
+                <label class="builder-field">
+                  <span>Core action</span>
+                  <input type="text" value="slowly rotating as vapor drifts around it" data-prompt-part placeholder="Example: walking forward, smiling, opening, floating">
+                </label>
+                <label class="builder-field">
+                  <span>Setting</span>
+                  <input type="text" value="on a dark reflective pedestal inside a clean studio" data-prompt-part placeholder="Example: rainy street, moonlit forest, white cyclorama">
+                </label>
+                <label class="builder-field">
+                  <span>Camera move</span>
+                  <input type="text" value="tight orbit camera with a soft push-in" data-prompt-part placeholder="Example: side tracking shot, static close-up, aerial glide">
+                </label>
+                <label class="builder-field">
+                  <span>Lighting and mood</span>
+                  <input type="text" value="controlled highlights, soft shadow falloff, premium luxury mood" data-prompt-part placeholder="Example: warm sunrise haze, dramatic neon reflections">
+                </label>
+                <label class="builder-field">
+                  <span>Finish</span>
+                  <input type="text" value="polished beauty commercial style" data-prompt-part placeholder="Example: cinematic film look, glossy ad finish, anime energy">
+                </label>
+              </div>
+              <div class="builder-actions">
+                <button class="button button-primary button-small" type="button" data-generate-prompt>Build Prompt</button>
+                <a class="button button-secondary button-small" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Test in AICovea</a>
+              </div>
+            </div>
+            <div class="builder-result">
+              <p class="builder-result-label">Built Prompt</p>
+              <textarea id="built-prompt" class="builder-output" readonly data-prompt-output></textarea>
+              <div class="builder-actions">
+                <button class="button button-soft button-small" type="button" data-copy-target="#built-prompt">Copy Prompt</button>
+                <a class="button button-primary button-small" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try This Prompt Online</a>
+              </div>
+              <div class="helper-card">
+                <p class="builder-note">This page is intentionally structured like a prompt builder, not a black-box prompt writer. It helps you keep the scene readable before you start iterating.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container narrow">
+          <h2>What a Prompt Builder Should Lock Before Style</h2>
+          <p>A useful prompt builder does not begin with adjectives. It begins with scene logic. Once the viewer can tell what the shot is about, style language becomes easier to control and easier to replace.</p>
+          <div class="step-grid">
+            <article class="step-card">
+              <span class="step-index">1</span>
+              <h3>Subject</h3>
+              <p>Define the main object, character, or environment so the prompt has a stable center of gravity.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-index">2</span>
+              <h3>Motion</h3>
+              <p>Name the behavior directly. Motion language should explain what changes in the shot, not just how the result should feel.</p>
+            </article>
+            <article class="step-card">
+              <span class="step-index">3</span>
+              <h3>Camera and finish</h3>
+              <p>Use camera and finish cues to shape the output after the scene itself already reads clearly.</p>
+            </article>
+          </div>
+          <p class="context-note">If you want more automated starter ideas, use the <a href="../ltx-2-3-prompt-generator/">prompt generator</a>. If you need examples to adapt, go to <a href="../ltx-2-3-prompt-examples/">prompt examples</a> or the more specific <a href="../ltx-2-3-text-to-video-prompts/">text to video prompts</a> page.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container narrow">
+          <h2>Prompt Builder Starting Blocks You Can Reuse</h2>
+          <div class="prompt-grid">
+            <article class="prompt-card">
+              <span class="prompt-tag">Product</span>
+              <h3>Commercial reveal block</h3>
+              <div class="prompt-copy">
+                <p id="prompt-builder-product">Luxury watch centered on a matte pedestal, slow rotation, close orbit camera, crisp edge lighting, premium launch-film finish.</p>
+              </div>
+              <div class="example-actions">
+                <button class="button button-soft button-small" type="button" data-copy-target="#prompt-builder-product">Copy Prompt</button>
+                <a class="button button-primary button-small" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Use in Tool</a>
+              </div>
+            </article>
+            <article class="prompt-card">
+              <span class="prompt-tag">Character</span>
+              <h3>Portrait motion block</h3>
+              <div class="prompt-copy">
+                <p id="prompt-builder-portrait">Young violinist holding eye contact with camera, subtle head turn, soft push-in, warm concert-hall glow, intimate cinematic portrait feel.</p>
+              </div>
+              <div class="example-actions">
+                <button class="button button-soft button-small" type="button" data-copy-target="#prompt-builder-portrait">Copy Prompt</button>
+                <a class="button button-primary button-small" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Use in Tool</a>
+              </div>
+            </article>
+            <article class="prompt-card">
+              <span class="prompt-tag">Environment</span>
+              <h3>Atmospheric scene block</h3>
+              <div class="prompt-copy">
+                <p id="prompt-builder-scene">Remote mountain road at sunrise, light fog moving across frame, aerial glide camera, warm gold haze, polished travel-film mood.</p>
+              </div>
+              <div class="example-actions">
+                <button class="button button-soft button-small" type="button" data-copy-target="#prompt-builder-scene">Copy Prompt</button>
+                <a class="button button-primary button-small" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Use in Tool</a>
+              </div>
+            </article>
+          </div>
+          <div class="quick-panel spaced-block">
+            <p class="eyebrow">Related Guides</p>
+            <div class="quick-link-grid">
+              <a class="quick-link" href="../ltx-2-3-prompt-generator/">Prompt Generator</a>
+              <a class="quick-link" href="../ltx-2-3-prompt-template/">Prompt Template</a>
+              <a class="quick-link" href="../ltx-2-3-text-to-video/">Text to Video</a>
+              <a class="quick-link" href="../ltx-2-3-image-to-video-examples/">Image to Video Examples</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section alt-section">
+        <div class="container narrow">
+          <h2>FAQ</h2>
+          <div class="faq-list">
+            <article class="faq-item">
+              <h3>What is the difference between an LTX 2.3 prompt builder and a prompt generator?</h3>
+              <p>A prompt builder helps you assemble the scene parts in a deliberate order. A prompt generator often implies automatic writing. This page is about control first.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Why use a prompt builder before testing in browser?</h3>
+              <p>Because it keeps the scene logic intact when you start making variations. That makes side-by-side prompt testing faster and less messy.</p>
+            </article>
+            <article class="faq-item">
+              <h3>Can I use these prompt blocks for text to video and image to video?</h3>
+              <p>Yes. The same structure works for both. You just keep image-to-video prompts more faithful to the source frame and let text-to-video prompts invent more of the shot.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container cta-banner">
+          <div>
+            <p class="eyebrow">Build Then Test</p>
+            <h3 class="banner-title">Turn a Prompt Draft Into a Real Browser Run</h3>
+            <p>Once the structure reads clearly, the next move is simple: copy the prompt into AICovea, run it, and keep the versions whose scene logic survives revision.</p>
+          </div>
+          <div class="button-row">
+            <a class="button button-primary" href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Test This Prompt Online</a>
+            <a class="button button-secondary" href="../ltx-2-3-prompt-guide/">Read the Prompt Guide</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand footer-brand" href="../">
+            <img src="../assets/logo.svg" alt="LTX 2.3 Guide logo" width="32" height="32">
+            <span>LTX 2.3 Guide</span>
+          </a>
+          <p class="footer-copy">Conversion-adjacent LTX 2.3 pages built around prompt quality, online testing, and low-friction path-to-tool intent.</p>
+        </div>
+        <div>
+          <h3>Related Guides</h3>
+          <ul class="footer-links">
+            <li><a href="../ltx-2-3-prompt-generator/">Prompt Generator</a></li>
+            <li><a href="../ltx-2-3-prompt-template/">Prompt Template</a></li>
+            <li><a href="../ltx-2-3-prompt-examples/">Prompt Examples</a></li>
+            <li><a href="../ltx-2-3-text-to-video/">Text to Video</a></li>
+            <li><a href="../ltx-2-3-image-to-video-examples/">Image to Video Examples</a></li>
+            <li><a href="../ltx-2-3-online/">Online Guide</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Try LTX 2.3</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.aicovea.com/ltx-2-3#prompt-ideas" target="_blank" rel="noopener noreferrer">Prompt Ideas</a></li>
+            <li><a href="https://www.aicovea.com/ltx-2-3" target="_blank" rel="noopener noreferrer">Try LTX 2.3 Online</a></li>
+            <li><a href="https://www.aicovea.com/pricing" target="_blank" rel="noopener noreferrer">Pricing</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span data-year></span> LTX 2.3 Guide</p>
+      </div>
+    </footer>
+  </div>
+  <script src="../assets/script.js"></script>
+</body>
+</html>
