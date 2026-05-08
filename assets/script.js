@@ -1,5 +1,75 @@
 const navToggle = document.querySelector('.nav-toggle');
 const siteNav = document.querySelector('.site-nav');
+const announcementBar = document.querySelector('[data-announcement]');
+const announcementClose = document.querySelector('[data-announcement-close]');
+const announcementCta = document.querySelector('[data-announcement-cta]');
+
+const ANNOUNCEMENT_DELAY_MS = 5000;
+const ANNOUNCEMENT_DISMISS_KEY = 'ltx23-home-announcement-dismissed-v1';
+const ANNOUNCEMENT_DELAY_KEY = 'ltx23-home-announcement-delay-ms';
+
+function trackEvent(name, props) {
+  if (typeof window.plausible !== 'function') {
+    return;
+  }
+
+  window.plausible(name, props ? { props } : undefined);
+}
+
+function readStorage(key) {
+  try {
+    return window.localStorage.getItem(key);
+  } catch (error) {
+    return null;
+  }
+}
+
+function writeStorage(key, value) {
+  try {
+    window.localStorage.setItem(key, value);
+  } catch (error) {
+    return;
+  }
+}
+
+function getAnnouncementDelay() {
+  if (!announcementBar) {
+    return ANNOUNCEMENT_DELAY_MS;
+  }
+
+  const configuredDelay = Number(announcementBar.dataset.delayMs || readStorage(ANNOUNCEMENT_DELAY_KEY));
+
+  if (!Number.isFinite(configuredDelay) || configuredDelay < 0) {
+    return ANNOUNCEMENT_DELAY_MS;
+  }
+
+  return configuredDelay;
+}
+
+function revealAnnouncement() {
+  if (!announcementBar || announcementBar.hidden) {
+    if (!announcementBar) {
+      return;
+    }
+  } else {
+    return;
+  }
+
+  announcementBar.hidden = false;
+  announcementBar.setAttribute('aria-hidden', 'false');
+  trackEvent('home announcement shown', { delay_ms: String(getAnnouncementDelay()) });
+}
+
+function dismissAnnouncement(reason) {
+  if (!announcementBar || announcementBar.hidden) {
+    return;
+  }
+
+  announcementBar.hidden = true;
+  announcementBar.setAttribute('aria-hidden', 'true');
+  writeStorage(ANNOUNCEMENT_DISMISS_KEY, '1');
+  trackEvent('home announcement dismissed', { reason });
+}
 
 async function copyText(text) {
   if (!text) {
@@ -108,3 +178,21 @@ document.querySelectorAll('[data-prompt-builder]').forEach((builder) => {
   trigger.addEventListener('click', buildPrompt);
   buildPrompt();
 });
+
+if (announcementBar) {
+  if (readStorage(ANNOUNCEMENT_DISMISS_KEY) !== '1') {
+    window.setTimeout(revealAnnouncement, getAnnouncementDelay());
+  }
+
+  if (announcementClose) {
+    announcementClose.addEventListener('click', () => {
+      dismissAnnouncement('close_button');
+    });
+  }
+
+  if (announcementCta) {
+    announcementCta.addEventListener('click', () => {
+      trackEvent('home announcement clicked', { target: 'primary_cta' });
+    });
+  }
+}
