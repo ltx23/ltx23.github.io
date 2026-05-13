@@ -159,7 +159,7 @@ document.querySelectorAll('[data-prompt-builder]').forEach((builder) => {
   const output = builder.querySelector('[data-prompt-output]');
   const trigger = builder.querySelector('[data-generate-prompt]');
 
-  if (!fields.length || !output || !trigger) {
+  if (!fields.length || !output) {
     return;
   }
 
@@ -175,7 +175,10 @@ document.querySelectorAll('[data-prompt-builder]').forEach((builder) => {
     output.value = prompt;
   };
 
-  trigger.addEventListener('click', buildPrompt);
+  if (trigger) {
+    trigger.addEventListener('click', buildPrompt);
+  }
+
   buildPrompt();
 });
 
