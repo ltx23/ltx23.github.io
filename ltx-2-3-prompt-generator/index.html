@@ -117,6 +117,29 @@
     ]
   }
   </script>
+  <!-- OpenPanel analytics -->
+  <script>
+    window.op = window.op || function() {
+      var n = [];
+      return new Proxy(function() {
+        arguments.length && n.push([].slice.call(arguments));
+      }, {
+        get: function(t, r) {
+          return "q" === r ? n : function() {
+            n.push([r].concat([].slice.call(arguments)));
+          };
+        },
+        has: function(t, r) {
+          return "q" === r;
+        }
+      });
+    }();
+    window.op('init', {
+      clientId: '3e3eb35d-43ea-4205-a065-00a64266be39',
+      trackScreenViews: true
+    });
+  </script>
+  <script src="https://openpanel.dev/op1.js" defer async></script>
 </head>
 <body>
   <div class="site-shell">
