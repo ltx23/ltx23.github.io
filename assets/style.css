@@ -1022,3 +1022,14 @@ h3 {
     width: 100%;
   }
 }
+
+.ad-slot {
+  padding-block: clamp(2rem, 4vw, 3.5rem);
+  overflow: hidden;
+  text-align: center;
+}
+
+.ad-slot > div {
+  display: inline-block;
+  max-width: 100%;
+}
